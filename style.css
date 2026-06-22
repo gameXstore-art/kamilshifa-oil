@@ -278,3 +278,155 @@
     transform:translateY(-2px);
     box-shadow:0 6px 15px rgba(0,0,0,0.15);
 }
+/* =========================
+   MOBILE RESPONSIVE FIXES
+========================= */
+
+@media screen and (max-width: 768px){
+
+    /* Body */
+    body{
+        background-attachment: scroll;
+    }
+
+    /* Navbar */
+    .navbar{
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .nav-links{
+        display:flex !important;
+        flex-wrap:wrap;
+        justify-content:center;
+        padding:0;
+        gap:10px;
+    }
+
+    .nav-links li{
+        margin:5px;
+    }
+
+    .nav-links a{
+        font-size:14px;
+    }
+
+    /* Hero Section */
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    .hero-box{
+        width:100%;
+        max-width:100%;
+        padding:20px;
+    }
+
+    .hero-box h1{
+        font-size:2rem;
+        line-height:1.2;
+    }
+
+    .hero-box p{
+        font-size:0.95rem;
+    }
+
+    /* Bottle */
+    .flip-card{
+        width:220px;
+        height:320px;
+        margin-top:25px;
+    }
+
+    /* Floating Leaves */
+    .floating-leaf{
+        width:40px;
+    }
+
+    /* About Product */
+    .pamphlet-content h2{
+        font-size:2rem;
+    }
+
+    .desc{
+        font-size:0.95rem;
+        padding:0 10px;
+    }
+
+    .info-card{
+        width:100%;
+        max-width:320px;
+        height:260px;
+    }
+
+    /* Reviews */
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Contact Section */
+    .contact-container{
+        display:flex !important;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .contact-info,
+    .contact-middle-box,
+    .contact-form{
+        width:100%;
+    }
+
+    .contact-info p{
+        font-size:1rem;
+    }
+
+    .contact-middle-box{
+        padding:20px;
+    }
+
+    /* Form */
+    .contact-form input,
+    .contact-form textarea{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    /* Footer */
+    footer{
+        font-size:14px;
+        padding:15px;
+    }
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media screen and (min-width:769px) and (max-width:1024px){
+
+    .hero{
+        gap:30px;
+    }
+
+    .hero-box{
+        max-width:550px;
+    }
+
+    .flip-card{
+        width:280px;
+        height:400px;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+}
